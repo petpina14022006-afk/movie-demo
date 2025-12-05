@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #010514;
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  color: #eee;
+}
+:root {
+  --text-light: rgb(196, 12, 12);
+}
+h1,
+h2 {
+  font-size: 2.2rem;
+}
+span {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin: auto;
+  max-width: 90%;
+  background-color: red;
+}
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./image/background.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  margin: 7rem;
+}
+.poster {
+  width: 100%;
+  height: 300px;
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+}
+.text-title > span {
+  margin-top: 3rem;
+  font-size: 5rem;
+  font-weight: bolder;
+  line-height: 1;
+  text-align: center;
+}
+.text-title > span > span {
+  color: blueviolet;
+}
+@media (min-width: 768px) {
+  .poster {
+    width: 60%;
+    height: 300px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+  }
+  .text-title > span {
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .text-title > span > span {
+    color: blueviolet;
+  }
+}
+@media (min-width: 992px) {
+  .poster {
+    width: 70%;
+    height: 340px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+  }
+  .text-title > span {
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: center;
+  }
+  .text-title > span > span {
+    color: blueviolet;
+  }
+}
+@media (min-width: 1200px) {
+  .poster {
+    width: 30%;
+    height: 300px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+  }
+  .text-title > span {
+    margin-top: 3rem;
+    width: 60%;
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: center;
+  }
+  .text-title > span > span {
+    color: blueviolet;
+  }
+}
