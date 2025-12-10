@@ -98,7 +98,6 @@ a {
 }
 .content {
   width: 100%;
-  height: 500px;
   background-color: #0c1122;
 }
 .text {
@@ -118,10 +117,50 @@ a {
   gap: 3rem;
 }
 .item {
-  height: 40rem;
-  background-color: aqua;
+  height: 50rem;
+  padding: 2.5rem;
+  border-radius: 10px;
+  background-color: #13182b;
+  transition: all 0.2s ease-in-out;
 }
-
+.item:hover {
+  background-color: #3d4358;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.item .img {
+  overflow: hidden;
+  width: 100%;
+  height: 85%;
+}
+.item .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.item .title {
+  margin-top: 1rem;
+  margin-bottom: 4px;
+}
+.quality {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  height: 15%;
+  line-height: 1.5;
+}
+.quality .star {
+  margin-top: 3px;
+  color: yellow;
+  font-size: 1.6rem;
+}
+.quality .num {
+  color: rgb(101, 109, 116);
+  font-weight: bolder;
+  font-size: 2rem;
+}
 @media (min-width: 768px) {
   .poster {
     width: 60%;
